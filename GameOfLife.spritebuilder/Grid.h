@@ -15,7 +15,7 @@
 
 @end
 
-@interface evelveStep: CCSprite
+@interface evelveStep : CCSprite
 
 //update each Creature's neighbor count
 [self countNeighbors];
