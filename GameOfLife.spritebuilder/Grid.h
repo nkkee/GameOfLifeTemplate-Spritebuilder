@@ -13,22 +13,8 @@
 @property (nonatomic, assign) int totalAlive;
 @property (nonatomic, assign) int generation;
 
-@end
-
-@interface evelveStep : CCSprite
-
-//update each Creature's neighbor count
-[self countNeighbors];
-
-//update each Creature's state
-[self updateCreatures];
-
-//update the generation so the label's text will display the correct generation
-_generation++;
+-(void) evolveStep;
+-(void) countNeighbors;
+-(void) updateCreatures;
 
 @end
-
-@interface countNeighbors: CCSprite
-
-@end
-
